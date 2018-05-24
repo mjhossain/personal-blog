@@ -52,6 +52,7 @@
   border: 2px solid #f2f2f2;
 }
 
+
 section {
   padding-top: 50px;
 }
@@ -78,6 +79,7 @@ section {
 
   #nav_wrapper{
     height: 100px;
+    width: 100%;
     grid-area: header;
     background-color: var(--nav-color);
     position: absolute;
@@ -89,9 +91,10 @@ section {
 
   #body_wrapper{
     height: 100vh;
+    width: 100%;
     grid-area: body;
     background-color: #f2f2f2;
-    padding: 150px 40px 10px 30px;
+    /* padding: 150px 40px 10px 30px; */
     overflow-y: scroll;
   }
 
@@ -130,7 +133,7 @@ section {
     position: absolute;
     display: flex;
     justify-content: center;
-    flex-flow: row;
+    flex-flow: wrap row;
     /* align-items: center; */
     text-align: center;
   }
