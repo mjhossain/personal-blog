@@ -1,0 +1,157 @@
+/* Declaring CSS Variables */
+:root {
+  --nav-color: #e27600;
+}
+
+
+/* Desktop Layout Design */
+
+#main {
+  /* height: 100vh; */
+  /* overflow-y: scroll; */
+  font-family: 'Gothic A1', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+      "header body body body body";
+}
+
+
+#nav_wrapper{
+  height: 100vh;
+  grid-area: header;
+  background-color: var(--nav-color);
+  /* position: fixed; */
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+
+#nav_wrapper > a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2em;
+  font-weight: bold;
+
+}
+
+#body_wrapper{
+  height: 100vh;
+  grid-area: body;
+  background-color: #f2f2f2;
+  padding: 150px 40px 10px 30px;
+  overflow-y: scroll;
+}
+
+#img {
+  height: 180px;
+  width: 180px;
+  border-radius: 100%;
+  border: 2px solid #f2f2f2;
+}
+
+section {
+  padding-top: 50px;
+}
+
+
+/* CSS for Mobile Devices */
+
+@media screen and (max-device-width: 480px){
+  #main {
+    /* height: 100vh; */
+    /* overflow-y: scroll; */
+    font-family: 'Gothic A1', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "header"
+        "body";
+  }
+
+  #img {
+    display: none;
+  }
+
+  #nav_wrapper{
+    height: 100px;
+    grid-area: header;
+    background-color: var(--nav-color);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap row;
+    align-items: center;
+  }
+
+  #body_wrapper{
+    height: 100vh;
+    grid-area: body;
+    background-color: #f2f2f2;
+    padding: 150px 40px 10px 30px;
+    overflow-y: scroll;
+  }
+
+  section {
+    padding-top: 120px;
+  }
+
+}
+
+
+
+/* CSS for Tablets */
+
+@media screen and (max-device-width: 768px){
+  #main {
+    /* height: 100vh; */
+    /* overflow-y: scroll; */
+    font-family: 'Gothic A1', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "header"
+        "body";
+  }
+
+  #img {
+    display: none;
+  }
+
+  #nav_wrapper{
+    height: 100px;
+    width: 100%;
+    grid-area: header;
+    background-color: var(--nav-color);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    /* align-items: center; */
+    text-align: center;
+  }
+
+  #body_wrapper{
+    height: 100vh;
+    grid-area: body;
+    background-color: #f2f2f2;
+    padding: 150px 40px 10px 30px;
+    overflow-y: scroll;
+  }
+
+  section {
+    padding-top: 120px;
+  }
+
+}
+
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
