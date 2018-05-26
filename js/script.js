@@ -11,3 +11,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
     });
 });
+
+// Highlight Nav on Scroll -debug
+
+
+/*
+$(document).ready(function(){
+
+   document.("section").mouseenter(function(){
+   	 var id = $(this).attr('id');
+   	 $('a').removeClass('active');
+   	 $("[href=#"+id+"]").addClass('active');
+   });
+
+});
+
+*/
