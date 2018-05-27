@@ -1,7 +1,7 @@
 /* Declaring CSS Variables */
 :root {
   --nav-color: #e27600;
-  --nav-color2: #ffc91d;
+  --nav-color2: #fdcc64;
   --body-color: #f2f2f2;
   --port-color: #00b0f5;
 }
@@ -96,7 +96,17 @@ a:hover {
   align-items: center;
   justify-content: center;
   /* visibility: hidden; */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
+
+
+/* Caption Hover Effect */
+#portfolio_item:hover > #port_caption {
+  /* visibility: visible; */
+  opacity: 1;
+}
+
 
 
 /* CSS for Mobile Devices */

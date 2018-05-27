@@ -13,8 +13,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-// Portfolio Portfolio Caption
-
+// Portfolio Caption
 
 
 
