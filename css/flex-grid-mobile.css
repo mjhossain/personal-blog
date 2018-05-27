@@ -104,7 +104,7 @@ a:hover {
 /* Caption Hover Effect */
 #portfolio_item:hover > #port_caption {
   /* visibility: visible; */
-  opacity: 1;
+  opacity: .7;
 }
 
 
