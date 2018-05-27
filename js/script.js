@@ -12,6 +12,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+
+// Portfolio Caption
+
+
+
+
+
+
+
 // Highlight Nav on Scroll -debug
 
 

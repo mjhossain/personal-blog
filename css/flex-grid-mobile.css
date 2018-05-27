@@ -1,8 +1,9 @@
 /* Declaring CSS Variables */
 :root {
   --nav-color: #e27600;
-  --nav-color2: #ffc91d;
+  --nav-color2: #fdcc64;
   --body-color: #f2f2f2;
+  --port-color: #00b0f5;
 }
 
 
@@ -67,6 +68,46 @@ a:hover {
 .active {
   color: var(--body-color);
 }
+
+#portfolio_show {
+  display: flex;
+  justify-content: center;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+
+#portfolio_item {
+  height: 300px;
+  width: 400px;
+  border-radius: 10px;
+  background-color: var(--port-color);
+  margin: 10px;
+  display: flex;
+}
+
+#port_caption{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  align-self: flex-end;
+  /* text-align: center; */
+  color: var(--nav-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* visibility: hidden; */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+/* Caption Hover Effect */
+#portfolio_item:hover > #port_caption {
+  /* visibility: visible; */
+  opacity: 1;
+}
+
+
 
 /* CSS for Mobile Devices */
 
