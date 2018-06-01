@@ -1,3 +1,3 @@
-#personal-blog
+#portfolio
 
-#This is a personal blog website. (Maybe not end up as a blog) ;)
+#This is my portfolio website and I will be developing throughout my journey of learning web development.
