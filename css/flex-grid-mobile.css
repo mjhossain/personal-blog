@@ -62,6 +62,14 @@
   border: 2px solid var(--pri-color);
 }
 
+/* #logo {
+  width: 50%;
+  height:50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+} */
 
 section {
   padding-top: 50px;
@@ -71,17 +79,7 @@ section {
   color: var(--body-color);
 }
 
-#nav {
-  height: 40px;
-  width: 120px;
-  background-color: #222;
-  margin: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* text-align: center; */
-  border: 2px solid var(--pri-color);
-}
+
 
 #portfolio_show {
   display: flex;
@@ -133,7 +131,86 @@ section {
   a:hover {
     transform: scale(1.2);
   }
+
+  #body_wrapper{
+    padding-top: 60px;
+  }
+
+  #nav {
+    height: 40px;
+    width: 120px;
+    background-color: #222;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    border: 2px solid var(--pri-color);
+  }
 }
+
+/* CSS for Tablets */
+
+@media screen and (max-device-width: 768px){
+  #main {
+    font-family: 'Gothic A1', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "header"
+        "body";
+  }
+
+  #img {
+    display: none;
+  }
+
+  #nav_wrapper{
+    height: 100px;
+    width: 100%;
+    grid-area: header;
+    background-color: var(--nav-color);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap row;
+    text-align: center;
+    color: #fafafa;
+    border-bottom: 3px solid var(--pri-color);
+  }
+
+  #nav {
+    height: 40px;
+    width: 120px;
+    background-color: #222;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    border: 2px solid var(--pri-color);
+  }
+
+  #body_wrapper{
+    height: 100vh;
+    grid-area: body;
+    background-color: var(--body-color);
+    padding: 150px 40px 10px 30px;
+    overflow-y: scroll;
+  }
+
+  section {
+    padding-top: 120px;
+  }
+
+  #port_caption {
+    opacity: 1;
+  }
+
+}
+
+
 
 
 /* CSS for Mobile Devices */
@@ -154,7 +231,7 @@ section {
   }
 
   #nav_wrapper{
-    height: 100px;
+    height: 150px;
     width: 100vw;
     grid-area: header;
     background-color: var(--nav-color);
@@ -188,55 +265,6 @@ section {
 
 
 
-
-/* CSS for Tablets */
-
-@media screen and (max-device-width: 768px){
-  #main {
-    font-family: 'Gothic A1', sans-serif;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-        "header"
-        "body";
-  }
-
-  #img {
-    display: none;
-  }
-
-  #nav_wrapper{
-    height: 100px;
-    width: 100%;
-    grid-area: header;
-    background-color: var(--nav-color);
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    flex-flow: wrap row;
-    text-align: center;
-    color: #fafafa;
-    border-bottom: 3px solid var(--pri-color);
-  }
-
-  #body_wrapper{
-    height: 100vh;
-    grid-area: body;
-    background-color: var(--body-color);
-    padding: 150px 40px 10px 30px;
-    overflow-y: scroll;
-  }
-
-  section {
-    padding-top: 120px;
-  }
-
-  #port_caption {
-    opacity: 1;
-  }
-
-}
 
 
 
