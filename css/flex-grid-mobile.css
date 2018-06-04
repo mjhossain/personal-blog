@@ -1,9 +1,10 @@
 /* Declaring CSS Variables */
 :root {
-  --nav-color: #e27600;
+  --nav-color: #111826;
   --nav-color2: #fdcc64;
   --body-color: #f2f2f2;
-  --port-color: #00b0f5;
+  --port-color: #BF4141;
+  --port-color2: #00b0f5;
 }
 
 
@@ -22,11 +23,13 @@
 #nav_wrapper{
   height: 100vh;
   grid-area: header;
-  background-color: var(--nav-color2);
+  background-color: var(--nav-color);
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
+  color: #fafafa;
+  border-right: 3px solid var(--port-color);
 }
 
 #nav_wrapper > a {
@@ -49,7 +52,7 @@
   height: 180px;
   width: 180px;
   border-radius: 100%;
-  border: 2px solid #f2f2f2;
+  border: 2px solid #BF4141;
 }
 
 
@@ -98,6 +101,7 @@ a:hover {
   /* visibility: hidden; */
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  color: #fafafa;
 }
 
 
@@ -130,12 +134,14 @@ a:hover {
     height: 100px;
     width: 100vw;
     grid-area: header;
-    background-color: var(--nav-color2);
+    background-color: var(--nav-color);
     position: absolute;
     display: flex;
     justify-content: center;
     flex-flow: wrap row;
     align-items: center;
+    color: #fafafa;
+    border-bottom: 3px solid var(--port-color);
   }
 
   #body_wrapper{
@@ -148,6 +154,10 @@ a:hover {
 
   section {
     padding-top: 120px;
+  }
+
+  #port_caption {
+    opacity: 1;
   }
 
 }
@@ -175,12 +185,14 @@ a:hover {
     height: 100px;
     width: 100%;
     grid-area: header;
-    background-color: var(--nav-color2);
+    background-color: var(--nav-color);
     position: absolute;
     display: flex;
     justify-content: center;
     flex-flow: wrap row;
     text-align: center;
+    color: #fafafa;
+    border-bottom: 3px solid var(--port-color);
   }
 
   #body_wrapper{
@@ -193,6 +205,10 @@ a:hover {
 
   section {
     padding-top: 120px;
+  }
+
+  #port_caption {
+    opacity: 1;
   }
 
 }
