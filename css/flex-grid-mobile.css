@@ -3,7 +3,7 @@
   --nav-color: #111826;
   --nav-color2: #fdcc64;
   --body-color: #f2f2f2;
-  --port-color: #BF4141;
+  --pri-color: #BF4141;
   --port-color2: #00b0f5;
   --alt-color: #BFB7A8;
   --alt-color2: #C5D9C7;
@@ -36,7 +36,7 @@
   flex-flow: column;
   align-items: center;
   color: #fafafa;
-  border-right: 3px solid var(--port-color);
+  border-right: 3px solid var(--pri-color);
 }
 
 #nav_wrapper > a {
@@ -59,7 +59,7 @@
   height: 180px;
   width: 180px;
   border-radius: 100%;
-  border: 2px solid #BF4141;
+  border: 2px solid var(--pri-color);
 }
 
 
@@ -67,16 +67,20 @@ section {
   padding-top: 50px;
 }
 
-a {
-  transition: all 1s;
-}
-
-a:hover {
-  transform: scale(1.2);
-}
-
 .active {
   color: var(--body-color);
+}
+
+#nav {
+  height: 40px;
+  width: 120px;
+  background-color: #222;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  border: 2px solid var(--pri-color);
 }
 
 #portfolio_show {
@@ -90,7 +94,7 @@ a:hover {
   height: 300px;
   width: 400px;
   border-radius: 10px;
-  background-color: var(--port-color);
+  background-color: var(--pri-color);
   margin: 10px;
   display: flex;
 }
@@ -118,6 +122,18 @@ a:hover {
   opacity: .7;
 }
 
+
+/* Special Desktop Only Effect */
+
+@media (min-device-width: 786px) {
+  a {
+    transition: all 1s;
+  }
+
+  a:hover {
+    transform: scale(1.2);
+  }
+}
 
 
 /* CSS for Mobile Devices */
@@ -148,7 +164,7 @@ a:hover {
     flex-flow: wrap row;
     align-items: center;
     color: #fafafa;
-    border-bottom: 3px solid var(--port-color);
+    border-bottom: 3px solid var(--pri-color);
   }
 
   #body_wrapper{
@@ -167,7 +183,9 @@ a:hover {
     opacity: 1;
   }
 
+
 }
+
 
 
 
@@ -199,7 +217,7 @@ a:hover {
     flex-flow: wrap row;
     text-align: center;
     color: #fafafa;
-    border-bottom: 3px solid var(--port-color);
+    border-bottom: 3px solid var(--pri-color);
   }
 
   #body_wrapper{
