@@ -56,10 +56,10 @@
 }
 
 #img {
-  height: 180px;
-  width: 180px;
-  border-radius: 100%;
-  border: 2px solid var(--pri-color);
+  height: 200px;
+  width: 200px;
+  /* border-radius: 100%; */
+  /* border: 2px solid var(--pri-color); */
 }
 
 /* #logo {
