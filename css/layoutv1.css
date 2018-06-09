@@ -50,15 +50,15 @@
   width: 250px;
   height: 100%;
   /* border: 2px solid var(--alt-color); */
-  margin-right: 5%;
+  /* margin-right: 5%; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #code {
-  font-size: 10em;
-  color: var(--light-red);
+  font-size: 8em;
+  color: var(--cream);
 }
 
 #textBox {
@@ -111,8 +111,8 @@
 #skills {
   width: 50%;
   height: 400px;
-  background-color: var(--dark-blue);
-  border: 1px solid var(--light-red);
+  background-color: var(--cream);
+  border: 1px solid var(--dark-blue);
   transition: all 1s;
   display: flex;
   justify-content: flex-start;
@@ -127,12 +127,12 @@
 
 #skill_heading {
   font-size: 3em;
-  color: var(--cream);
+  color: var(--dark-blue);
 }
 
 #title_logo {
   font-size: 10em;
-  color: var(--light-red);
+  color: var(--dark-blue);
   margin-bottom: 2%;
 }
 
@@ -160,7 +160,7 @@
 }
 
 #skill_set > * {
-  font-size: 5em;
+  font-size: 3em;
 }
 
 #skill_set > img {
@@ -175,8 +175,10 @@
 #css3 { color: #1f62ae; }
 #js { color: #d6ba33; }
 #nodejs { color: #3e863d; }
-#tux { color: #ebb706; }
+#tux { color: #dd4814; }
 #wp { color: #13a2dd; }
+.php {margin-top: 5px;}
+.mysql {margin-top: 5px;}
 
 /* Skill End */
 
@@ -197,8 +199,8 @@
   grid-area: footer;
   height: 300px;
   width: 100%;
-  background-color: var(--light-red);
-  border: 3px solid var(--dark--blue);
+  background-color: var(--dark-blue);
+  /* border: 3px solid var(--light-red); */
 }
 
 
