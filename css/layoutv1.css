@@ -38,7 +38,7 @@
   display: flex;
   flex-direction: row;
   padding-left: 20px;
-  /* border-bottom: 5px solid var(--light-red); */
+  border-bottom: 5px solid var(--light-red);
   font-family: 'Gothic A1', sans-serif;
   display: flex;
   flex-flow: row nowrap;
