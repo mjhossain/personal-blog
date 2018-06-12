@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-blue: #111826;
+  --light-yellow: #fdcc64;
+  --cream: #f2f2f2;
+  --light-red: #BF4141;
+  --sky-blue: #00b0f5;
+  --alt-color: #BFB7A8;
+  --alt-color2: #C5D9C7;
+  --alt-color3: #454445;
+  --alt-color4: #F5F2DC;
+  --alt-color5: #FF5729;
+  --alt-color6: #009494;
+  --alt-color7: #fafafa;
+}
+
+#title {
+  /* letter-spacing: -15px; */
+  font-family: 'Slabo 27px', serif;
+  color: var(--alt-color7);
+  text-align: center;
+  font-size: 2em;
+}
+
+#title_text {
+  
+}
+
+.MainContainer {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.ContentContainer {
+  position: relative;
+  display: block;
+  background-color: white;
+  z-index: 1;
+}
+
+.Content {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+
+p {
+  margin: 75px 0;
+}
+
+.ParallaxContainer {
+  display: flex;
+  /* flex: 1 0 auto; */
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  transform: translateZ(-1px) scale(2);
+  /* background: url(https://www.toptal.com/designers/subtlepatterns/patterns/sakura.png); */
+  background-color: var(--dark-blue);
+}
