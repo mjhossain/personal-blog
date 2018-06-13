@@ -16,6 +16,10 @@
   --alt-color5: #FF5729;
   --alt-color6: #009494;
   --alt-color7: #fafafa;
+  --title: #131313;
+  --mate-cream: #D9D7D6;
+  --mate-white: #e7e5e4;
+  --light-white: #F7F5F4;
 }
 
 
@@ -48,7 +52,7 @@
   align-items: center;
   flex-flow: row wrap;
   transform: translateZ(-1px) scale(2);
-  background-color: var(--dark-blue);
+  background-color: var(--mate-cream);
   grid-area: header;
   padding-top: 10%;
 }
@@ -57,7 +61,7 @@
 .BodyContainer {
   position: relative;
   display: flex;
-  background-color: var(--cream);
+  background-color: var(--light-white);
   z-index: 1;
   grid-area: body;
   height: 100%;
@@ -83,7 +87,7 @@
 
 #header {
   width: 100%;
-  background-color: var(--dark-blue);
+  /* background-color: var(--mate-white); */
   padding-left: 20px;
   font-family: 'Quicksand', sans-serif;
   display: flex;
@@ -119,8 +123,8 @@
 }
 
 #textBox > h1 {
-  color: var(--cream);
-  font-size: 3em;
+  /* color: var(--cream); */
+  font-size: 4em;
 }
 
 
@@ -133,7 +137,7 @@
   background-color: var(--light-red);
   padding: 20px;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-top: 4%;
   margin-bottom: 4%;
   color: var(--cream);
@@ -147,8 +151,8 @@
 }
 
 #social_icon {
-  font-size: 2em;
-  color: var(--cream);
+  font-size: 2.4em;
+  color: var(--dark-blue);
   padding-right: 5px;
 }
 
@@ -157,10 +161,16 @@
 }
 
 #down_icon {
-  font-size: 3em;
+  position: relative;
+  bottom: 50px;
+  font-size: 5em;
   color: var(--light-red);
   animation-delay: 2s;
   animation-iteration-count: 4;
+}
+
+#down_icon:hover {
+  color: var(--dark-blue);
 }
 
 /* Header CSS End */
@@ -168,9 +178,28 @@
 
 /* Body CSS */
 
-
+.Skills {
+  height: 400px;
+}
 
 /* Body CSS End */
+
+/* Shadows */
+
+.elegantshadow {
+    color: var(--dark-blue);
+    letter-spacing: .15em;
+    text-shadow:
+      1px -1px 0 #767676,
+      -1px 2px 1px #737272,
+      -2px 4px 1px #767474,
+      -3px 6px 1px #787777,
+      -4px 8px 1px #7b7a7a,
+      -5px 10px 1px #7f7d7d;
+
+  }
+
+
 
 ::-webkit-scrollbar {
     display: none;
