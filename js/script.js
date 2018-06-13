@@ -1,4 +1,6 @@
 
+
+
 // Smooth Scrolling Effect
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -11,28 +13,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
     });
 });
-
-
-// Portfolio Caption
-
-
-
-
-
-
-
-// Highlight Nav on Scroll -debug
-
-
-/*
-$(document).ready(function(){
-
-   document.("section").mouseenter(function(){
-   	 var id = $(this).attr('id');
-   	 $('a').removeClass('active');
-   	 $("[href=#"+id+"]").addClass('active');
-   });
-
-});
-
-*/
