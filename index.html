@@ -3,96 +3,86 @@
   <head>
     <meta charset="utf-8">
     <title>Mohammed J Hossain</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="css/basic.css">  Contains Basic & Flexbox Design Layout -->
-    <link rel="stylesheet" href="css/layoutv1.css"> <!-- Contains Basic + CSSfFlexbox + CSS-Grid Design Layout -->
-    <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/master.css">
+
   </head>
   <body>
-  <div id="main">
+    <div class="MainContainer">
 
-    <div id="header">
-      <div id="logo">
-        <ion-icon name="code-working" id="code"></ion-icon>
-      </div>
-      <div id="textBox">
-        <h1>Mohammed Jakir Hossain</h1>
-        <h4>Aspiring Full Stack Developer</h4>
-        <div id="social">
-          <a href="https://github.com/mjhossain" target="_blank"><ion-icon name="logo-github" id="social_icon"></ion-icon></a>
-          <a href="https://codepen.io/mjhossain/" target="_blank"><ion-icon name="logo-codepen" id="social_icon"></ion-icon></a>
-          <a href="https://www.youtube.com/channel/UCWgsoirjxDt9exKbPnQVnaw" target="_blank"><ion-icon name="logo-youtube" id="social_icon"></ion-icon></a>
-          <a href="https://www.linkedin.com/in/mohammedjhossain/" target="_blank"><ion-icon name="logo-linkedin" id="social_icon"></ion-icon></a>
-          <a href="https://www.facebook.com/mdjakirofficial" target="_blank"><ion-icon name="logo-facebook" id="social_icon"></ion-icon></a>
-          <a href="https://twitter.com/mdjhossain" target="_blank"><ion-icon name="logo-twitter" id="social_icon"></ion-icon></a>
-          <a href="https://www.flickr.com/photos/141964849@N05/" target="_blank"><ion-icon name="aperture" id="social_icon"></ion-icon></a>
-          <a href="mailto:mjhossainnyc@gmail.com" target="_blank"><ion-icon name="mail" id="social_icon"></ion-icon></a>
-        </div>
-      </div>
-    </div>
+          <div class="ParallaxContainer">
 
-    <div id="content">
+            <div id="header">
+              <!-- <div id="logo">
+                <ion-icon name="code-working" id="code"></ion-icon>
+              </div> -->
+              <div id="textBox">
 
-      <div id="skills">
-          <ion-icon name="code" id="title_logo"></ion-icon>
-          <h1 id="skill_heading">Web Development</h1>
-          <div id="skill_set">
-            <ion-icon name="logo-html5" id="html5"></ion-icon>
-            <ion-icon name="logo-css3" id="css3"></ion-icon>
-            <ion-icon name="logo-javascript" id="js"></ion-icon>
-            <ion-icon name="logo-nodejs" id="nodejs"></ion-icon>
-            <ion-icon name="logo-tux" id="tux"></ion-icon>
-            <ion-icon name="logo-wordpress" id="wp"></ion-icon>
-            <img class="php" src="media/icons/php-logo.png" alt="">
-            <img class="mysql" src="media/icons/mysql.png" alt="">
+                <h1 class="elegantshadow">Mohammed J Hossain</h1>
+
+                <div class="skill_title">
+                  <span id="talent"></span>
+                </div>
+
+                <div id="social">
+                  <a href="https://github.com/mjhossain" target="_blank"><ion-icon name="logo-github" id="social_icon"></ion-icon></a>
+                  <a href="https://codepen.io/mjhossain/" target="_blank"><ion-icon name="logo-codepen" id="social_icon"></ion-icon></a>
+                  <a href="https://www.youtube.com/channel/UCWgsoirjxDt9exKbPnQVnaw" target="_blank"><ion-icon name="logo-youtube" id="social_icon"></ion-icon></a>
+                  <a href="https://www.linkedin.com/in/mohammedjhossain/" target="_blank"><ion-icon name="logo-linkedin" id="social_icon"></ion-icon></a>
+                  <a href="https://www.facebook.com/mdjakirofficial" target="_blank"><ion-icon name="logo-facebook" id="social_icon"></ion-icon></a>
+                  <a href="https://twitter.com/mdjhossain" target="_blank"><ion-icon name="logo-twitter" id="social_icon"></ion-icon></a>
+                  <a href="https://www.flickr.com/photos/141964849@N05/" target="_blank"><ion-icon name="aperture" id="social_icon"></ion-icon></a>
+                  <a href="mailto:mjhossainnyc@gmail.com" target="_blank"><ion-icon name="mail" id="social_icon"></ion-icon></a>
+                </div>
+
+              </div>
+
+            </div>
+            <a href="#body">
+              <ion-icon name="arrow-dropdown" id="down_icon" class="animated bounce"></ion-icon>
+            </a>
           </div>
-      </div>
 
-      <div id="skills">
-        <br />
-        <br />
-          <ion-icon name="logo-youtube" id="title_logo"></ion-icon>
-          <h1 id="skill_heading">Youtube</h1>
+          <div class="BodyContainer" id="body">
+            <div class="Content">
+              <div class="Skills" id="webdev">
+                <div class="SkillDetail">
+                    <h1 id="SkillTitle">&lt;Web Development /&gt;</h1>
 
-      </div>
-
-      <div id="skills">
-          <ion-icon name="tv" id="title_logo"></ion-icon>
-          <h1 id="skill_heading">Graphics Designing</h1>
-          <div id="skill_set">
-            <img src="media/icons/Ps-icon-r.png" alt="" id="gp_skill">
-            <img src="media/icons/Lr-icon-r.png" alt="" id="gp_skill">
-            <img src="media/icons/Ai-icon-r.png" alt="" id="gp_skill">
-            <img src="media/icons/Ae-icon-r.png" alt="" id="gp_skill">
-            <img src="media/icons/Pr-icon-r.png" alt="" id="gp_skill">
-
+                    <br />
+                    <p id="desc">I'm an entry-level web developer. Currently pursuing an Associates Degree in Computer Science from City University of New York.
+                    I've learned Web Development by my own from resources like Codecademy, freeCodeCamp, SoloLearn and courses from Udemy. I work as a freelancer
+                  and project based. My potential client is/are independent professionals and small-scale companies. Along side of Web Development, I also do Graphics
+                Designing and Professional Photography.</p>
+                </div>
+                <div class="photo">
+                  <img src="media/dp.jpg" alt="" id="image">
+                </div>
+            </div>
+            <div class="Portfolio">
+              
+            </div>
           </div>
-      </div>
 
-      <div id="skills">
-        <br />
-        <br />
-          <ion-icon name="camera" id="title_logo"></ion-icon>
-          <h1 id="skill_heading">Photography</h1>
-
-      </div>
+    </div> <!-- Main Container Closed -->
 
 
+  <!-- JavaScript -->
+      <script type="text/javascript" src="js/typed.min.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+      <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
+      <script type="text/javascript">
+        var typed = new Typed("#talent", {
+          strings: ["Web Developer", "Graphics Designer", "Photographer"],
+          typeSpeed: 50,
+          backSpeed: 40,
+          loop: true
+        });
+      </script>
+  <!-- JavaScript -->
 
-    </div> <!--End of Portfolio Div -->
-
-
-    <!-- <div id="footer">
-
-    </div> -->
-
-
-  </div> <!-- Main Div Closing Tag -->
-
-
-  <!-- JS Script tags -->
-  <script type="text/javascript" src="js/script.js"></script>
-  <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
   </body>
 </html>

@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-blue: #111826;
+  --light-yellow: #fdcc64;
+  --cream: #f2f2f2;
+  --light-red: #BF4141;
+  --sky-blue: #00b0f5;
+  --alt-color: #BFB7A8;
+  --alt-color2: #C5D9C7;
+  --alt-color3: #454445;
+  --alt-color4: #F5F2DC;
+  --alt-color5: #FF5729;
+  --alt-color6: #009494;
+  --alt-color7: #fafafa;
+  --title: #131313;
+  --mate-cream: #D9D7D6;
+  --mate-white: #e7e5e4;
+  --light-white: #F7F5F4;
+  --font1: 'Quicksand', sans-serif;
+  --font2: 'PT Sans', sans-serif;
+}
+
+
+/* Main Containers */
+
+.MainContainer {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto auto auto;
+  grid-template-areas:
+    "header"
+    "body"
+    "footer";
+}
+
+
+.ParallaxContainer {
+  display: flex;
+  /* flex: 1 0 auto; */
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  transform: translateZ(-1px) scale(2);
+  background-color: var(--mate-cream);
+  grid-area: header;
+  padding-top: 10%;
+}
+
+
+.BodyContainer {
+  position: relative;
+  display: flex;
+  background-color: var(--light-white);
+  z-index: 1;
+  grid-area: body;
+  height: 100%;
+  border-top: 5px solid var(--light-red);
+}
+
+
+.Content {
+  width: 100vw;
+  display: flex;
+  /* padding: 25px; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/* Main Containers End */
+
+/* Header CSS */
+
+
+#header {
+  width: 100%;
+  /* background-color: var(--mate-white); */
+  padding-left: 20px;
+  font-family: var(--font1);
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  width: 250px;
+  height: 100%;
+  /* border: 2px solid var(--alt-color); */
+  /* margin-right: 5%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#code {
+  font-size: 10em;
+  color: var(--cream);
+}
+
+
+#textBox {
+  height: 100%;
+  /* width: 500px; */
+  /* margin-top: 2%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#textBox > h1 {
+  /* color: var(--cream); */
+  font-size: 4em;
+}
+
+
+.skill_title {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-red);
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  color: var(--cream);
+  box-shadow: 0 3px 8px 1px rgba(0,0,0,0.5);
+}
+
+#social {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+#social_icon {
+  font-size: 2.4em;
+  color: var(--dark-blue);
+  padding-right: 5px;
+}
+
+#social_icon:hover {
+  color: var(--light-red);
+}
+
+#down_icon {
+  position: relative;
+  bottom: 50px;
+  font-size: 5em;
+  color: var(--light-red);
+  animation-delay: 2s;
+  animation-iteration-count: 4;
+}
+
+#down_icon:hover {
+  color: var(--dark-blue);
+}
+
+/* Header CSS End */
+
+
+/* Body CSS */
+
+.Skills {
+  height: 100%;
+  font-family: var(--font2);
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.SkillDetail {
+  width: 60vw;
+}
+
+.photo {
+  width: 30vw;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+  box-shadow: 0 3px 8px 1px rgba(0,0,0,0.5);
+}
+
+#SkillTitle {
+  /* border-bottom: 2px solid red; */
+  font-size: 3em;
+  color: var(--dark-blue);
+}
+
+#desc {
+  line-height: 2;
+  width: 70%;
+  font-size: 1.3em;
+  color: var(--title);
+}
+
+.Portfolio {
+  
+}
+
+
+/* Body CSS End */
+
+/* Shadows */
+
+.elegantshadow {
+    color: var(--dark-blue);
+    letter-spacing: .15em;
+    text-shadow:
+      1px -1px 0 #767676,
+      -1px 2px 1px #737272,
+      -2px 4px 1px #767474,
+      -3px 6px 1px #787777,
+      -4px 8px 1px #7b7a7a,
+      -5px 10px 1px #7f7d7d;
+
+}
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
