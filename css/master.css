@@ -20,6 +20,8 @@
   --mate-cream: #D9D7D6;
   --mate-white: #e7e5e4;
   --light-white: #F7F5F4;
+  --font1: 'Quicksand', sans-serif;
+  --font2: 'PT Sans', sans-serif;
 }
 
 
@@ -70,6 +72,7 @@
 
 
 .Content {
+  width: 100vw;
   display: flex;
   /* padding: 25px; */
   flex-direction: column;
@@ -89,7 +92,7 @@
   width: 100%;
   /* background-color: var(--mate-white); */
   padding-left: 20px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: var(--font1);
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -141,7 +144,7 @@
   margin-top: 4%;
   margin-bottom: 4%;
   color: var(--cream);
-  /* box-shadow: 0 3px 2px 3px #222; */
+  box-shadow: 0 3px 8px 1px rgba(0,0,0,0.5);
 }
 
 #social {
@@ -179,8 +182,47 @@
 /* Body CSS */
 
 .Skills {
-  height: 400px;
+  height: 100%;
+  font-family: var(--font2);
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
 }
+
+.SkillDetail {
+  width: 60vw;
+}
+
+.photo {
+  width: 30vw;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+  box-shadow: 0 3px 8px 1px rgba(0,0,0,0.5);
+}
+
+#SkillTitle {
+  /* border-bottom: 2px solid red; */
+  font-size: 3em;
+  color: var(--dark-blue);
+}
+
+#desc {
+  line-height: 2;
+  width: 70%;
+  font-size: 1.3em;
+  color: var(--title);
+}
+
+.Portfolio {
+  
+}
+
 
 /* Body CSS End */
 
@@ -197,7 +239,7 @@
       -4px 8px 1px #7b7a7a,
       -5px 10px 1px #7f7d7d;
 
-  }
+}
 
 
 
