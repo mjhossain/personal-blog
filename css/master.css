@@ -62,24 +62,25 @@
 
 
 .BodyContainer {
+  /* height: 100%; */
   position: relative;
   display: flex;
   background-color: var(--light-white);
   z-index: 1;
   grid-area: body;
-  height: 100%;
   border-top: 5px solid var(--light-red);
 }
 
 
 .Content {
   width: 100vw;
+  height: 100%;
   display: flex;
   /* padding: 25px; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+
 }
 
 
@@ -317,6 +318,8 @@
   margin-bottom: 5%;
   height: 100%;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .LogoSet2 {
@@ -325,7 +328,78 @@
   /* margin-bottom: 5%; */
   height: 100%;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
+
+.PortfolioSection {
+  height: 100%;
+  width: 80vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#PortfolioItem {
+  width: 400px;
+  height: 300px;
+  border-radius: 2%;
+  background-color: var(--light-red);
+  box-shadow: var(--shadow);
+  margin: 2%;
+  transition: all 1s;
+  display: flex;
+  z-index: 2;
+}
+
+
+#port_caption{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  align-self: flex-end;
+  /* text-align: center; */
+  color: var(--dark--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  /* visibility: hidden; */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  color: #fafafa;
+  z-index: 3;
+  /* padding: 10px; */
+  /* padding-left: 8px; */
+  border-radius: 2%;
+  text-align: center;
+}
+
+#PortfolioItem > a {
+  text-decoration: none;
+}
+
+/* Caption Hover Effect */
+#PortfolioItem > a:hover > #port_caption {
+  /* visibility: visible; */
+  opacity: .7;
+}
+
+
+
+.resilienceand {
+  background: url('../media/resilienceand-sm.png');
+}
+
+.butterflyorg {
+  background: url('../media/butterflyorg-sm.png');
+}
+
+.salmeen {
+  background: url('../media/salmeen-sm.png');
+}
+
 
 /* Body CSS End */
 
