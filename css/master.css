@@ -235,6 +235,7 @@
 .Portfolio > h2 {
   font-family: var(--font2);
   font-size: 2em;
+  margin-bottom: 5%;
 }
 
 .TechContainer {
@@ -314,12 +315,16 @@
   display: flex;
   flex-flow: row nowrap;
   margin-bottom: 5%;
+  height: 100%;
+  width: 100%;
 }
 
 .LogoSet2 {
   display: flex;
   flex-flow: row nowrap;
   /* margin-bottom: 5%; */
+  height: 100%;
+  width: 100%;
 }
 
 /* Body CSS End */
