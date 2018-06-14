@@ -22,6 +22,7 @@
   --light-white: #F7F5F4;
   --font1: 'Quicksand', sans-serif;
   --font2: 'PT Sans', sans-serif;
+  --shadow: 0 3px 8px 1px rgba(0,0,0,0.5);
 }
 
 
@@ -78,6 +79,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 
@@ -144,7 +146,7 @@
   margin-top: 4%;
   margin-bottom: 4%;
   color: var(--cream);
-  box-shadow: 0 3px 8px 1px rgba(0,0,0,0.5);
+  box-shadow: var(--shadow);
 }
 
 #social {
@@ -189,6 +191,7 @@
   justify-content: center;
   align-items: center;
   padding: 50px;
+  margin-top: 5%;
 }
 
 .SkillDetail {
@@ -203,13 +206,14 @@
   max-width: 100%;
   height: auto;
   border-radius: 10%;
-  box-shadow: 0 3px 8px 1px rgba(0,0,0,0.5);
+  box-shadow: var(--shadow);
 }
 
 #SkillTitle {
   /* border-bottom: 2px solid red; */
   font-size: 3em;
   color: var(--dark-blue);
+
 }
 
 #desc {
@@ -220,11 +224,120 @@
 }
 
 .Portfolio {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-top: 50px;
 }
 
+.Portfolio > h2 {
+  font-family: var(--font2);
+  font-size: 2em;
+}
+
+.TechContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.TechSkills {
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  height: 100%;
+}
+
+#TechSkill {
+  height: 220px;
+  width: 35vw;
+  background-color: var(--mate-cream);
+  box-shadow: var(--shadow);
+  border-radius: 2%;
+  display: flex;
+  flex-flow: column nowrap;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+#TechSkillTitle {
+  height: auto;
+  padding: 20px;
+  background-color: var(--dark-blue);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font2);
+  font-size: 1.5em;
+  color: var(--mate-white);
+  margin-bottom: 3%;
+}
+
+#Tech {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 5%;
+}
+
+#TechTitle {
+  margin-left: 2%;
+  font-size: 1.5em;
+  color: var(--dark-blue);
+}
+
+#TechLogo {
+  font-size: 2.5em;
+}
+
+#TechImage {
+  width: 50px;
+  height: 50px;
+}
+
+#gp_skill {
+  width: 50px;
+  height: 50px;
+}
+
+.LogoSet1 {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 5%;
+}
+
+.LogoSet2 {
+  display: flex;
+  flex-flow: row nowrap;
+  /* margin-bottom: 5%; */
+}
 
 /* Body CSS End */
+
+/* Logos */
+
+.html5 { color: #e44d26; }
+.css3 { color: #1f62ae; }
+.js { color: #d6ba33; }
+.nodejs { color: #3e863d; }
+.tux { color: #dd4814; }
+.wp { color: #13a2dd; }
+.php {margin-top: 5px;}
+/* .mysql {margin-right: 10%;} */
+#mongodb {
+  height: auto;
+  width: 40%;
+}
 
 /* Shadows */
 
