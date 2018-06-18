@@ -447,6 +447,25 @@
   width: 100vw;
   background-color: var(--dark-blue);
   border-top: 3px solid var(--light-red);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footerContent {
+  height: 80vh;
+}
+
+#copyright {
+  /* align-self: flex-end; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  font-size: 1.1em;
+  font-family: var(--font1);
+  color: var(--cream);
 }
 
 
