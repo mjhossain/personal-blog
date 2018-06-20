@@ -259,7 +259,7 @@
 }
 
 #TechSkill {
-  height: 220px;
+  min-height: 220px;
   width: 35vw;
   background-color: var(--mate-cream);
   box-shadow: var(--shadow);
@@ -291,6 +291,7 @@
   align-items: center;
   width: 80%;
   margin: 5%;
+  min-height: 150px;
 }
 
 #TechTitle {
@@ -305,7 +306,7 @@
 
 #TechImage {
   width: 50px;
-  height: 50px;
+  height: auto;
 }
 
 #gp_skill {
@@ -316,7 +317,7 @@
 .LogoSet1 {
   display: flex;
   flex-flow: row nowrap;
-  margin-bottom: 5%;
+  /* margin-bottom: 5%; */
   height: 100%;
   width: 100%;
   justify-content: center;
@@ -436,9 +437,10 @@
 .wp { color: #13a2dd; }
 .php {margin-top: 5px;}
 /* .mysql {margin-right: 10%;} */
+
 #mongodb {
   height: auto;
-  width: 40%;
+  width: 30%;
 }
 
 
