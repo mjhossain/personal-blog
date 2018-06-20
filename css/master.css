@@ -350,16 +350,16 @@
   box-shadow: var(--shadow);
   margin: 2%;
   transition: all 1s;
-  display: flex;
+  /* display: flex; */
   z-index: 2;
 }
 
 
 #port_caption{
-  width: 100%;
-  height: 100%;
+  width: 400px;
+  height: 300px;
   background-color: black;
-  align-self: flex-end;
+  /* align-self: flex-end; */
   /* text-align: center; */
   color: var(--dark--blue);
   display: flex;
@@ -371,11 +371,12 @@
   transition: opacity 0.5s ease-in-out;
   color: #fafafa;
   font-size: 1.2em;
-  z-index: 3;
+  /* z-index: 2; */
   /* padding: 10px; */
   /* padding-left: 8px; */
   border-radius: 2%;
   text-align: center;
+  font-family: var(--font2);
 }
 
 #PortfolioItem > a {
@@ -388,8 +389,8 @@
   opacity: .7;
 }
 
-#port_caption {
-  font-family: var(--font2);
+#port_caption > p {
+  padding: 10px;
 }
 
 .resilienceand {
