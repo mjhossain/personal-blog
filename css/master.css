@@ -170,7 +170,8 @@
   /* position: relative; */
   /* bottom: 50px; */
   /* margin-top:6%;  */
-  font-size: 5em;
+  font-size: 4em;
+  /* font-weight: lighter; */
   color: var(--light-red);
   animation-delay: 2s;
   animation-iteration-count: 4;
