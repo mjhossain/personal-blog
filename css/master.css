@@ -350,7 +350,7 @@
   background-color: var(--light-red);
   box-shadow: var(--shadow);
   margin: 2%;
-  transition: all 1s;
+  transition: all .5s;
   /* display: flex; */
   z-index: 2;
 }
@@ -417,7 +417,7 @@
   color: var(--cream);
   font-family: var(--font2);
   box-shadow: var(--shadow);
-  transition: all 1s;
+  transition: all .5s;
 }
 
 #contact_btn:hover {
