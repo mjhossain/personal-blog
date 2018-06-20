@@ -445,7 +445,7 @@
 
 .Footer {
   grid-area: footer;
-  height: 400px;
+  height: 100px;
   width: 100vw;
   background-color: var(--dark-blue);
   border-top: 3px solid var(--light-red);
