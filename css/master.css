@@ -388,7 +388,9 @@
   opacity: .7;
 }
 
-
+#port_caption {
+  font-family: var(--font2);
+}
 
 .resilienceand {
   background: url('../media/resilienceand-sm.png');
@@ -443,7 +445,7 @@
 
 .Footer {
   grid-area: footer;
-  height: 200px;
+  height: 400px;
   width: 100vw;
   background-color: var(--dark-blue);
   border-top: 3px solid var(--light-red);
@@ -455,6 +457,23 @@
 
 #footerContent {
   height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#footerDetails {
+  width: 60vw;
+  height: 100%;
+  background-color: var(--alt-color2);
+}
+
+#footerContact {
+  width: 40vw;
+  height: 100%;
+  background-color: var(--alt-color3);
 }
 
 #copyright {
