@@ -14,3 +14,51 @@ Contains Code Snippets
       <img class="mysql" src="media/icons/mysql.png" alt="">
     </div>
 </div>
+
+
+
+Tech Skill Section
+
+
+
+            <!-- <div class="Portfolio">
+              <h2>Technologies</h2>
+              <div class="TechContainer">
+
+                <div class="TechSkills">
+                  <div id="TechSkill">
+                    <span id="TechSkillTitle">Tech I know</span>
+                    <span id="Tech">
+
+                      <div class="LogoSet1">
+                        <ion-icon name="logo-html5" class="html5" id="TechLogo"></ion-icon>
+                        <ion-icon name="logo-css3" class="css3" id="TechLogo"></ion-icon>
+                        <ion-icon name="logo-javascript" class="js" id="TechLogo"></ion-icon>
+                        <ion-icon name="logo-tux" class="tux" id="TechLogo"></ion-icon>
+                        <ion-icon name="logo-wordpress" class="wp" id="TechLogo"></ion-icon>
+                        <p style="font-size: 1.6em;" class="mysql">MySQL</p>
+                      </div>
+
+                      <div class="LogoSet2">
+                        <img src="media/icons/Ps-icon-r.png" alt="" id="gp_skill">
+                        <img src="media/icons/Lr-icon-r.png" alt="" id="gp_skill">
+                        <img src="media/icons/Ai-icon-r.png" alt="" id="gp_skill">
+                        <img src="media/icons/Ae-icon-r.png" alt="" id="gp_skill">
+                        <img src="media/icons/Pr-icon-r.png" alt="" id="gp_skill">
+                      </div>
+
+                    </span>
+                  </div>
+
+                  <div id="TechSkill">
+                    <span id="TechSkillTitle">Learning</span>
+                    <span id="Tech">
+
+                      <ion-icon name="logo-nodejs" class="nodejs" id="TechLogo"></ion-icon>
+                      <img src="media/icons/react.svg" alt="" id="TechImage">
+                      <img src="media/icons/mongodb.svg" alt="" id="mongodb">
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div> -->

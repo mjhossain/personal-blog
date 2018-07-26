@@ -13,3 +13,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
     });
 });
+
+
+//Typing Effect
+var typed = new Typed("#talent", {
+  strings: ["Web Developer", "Graphics Designer", "Photographer"],
+  typeSpeed: 50,
+  backSpeed: 40,
+  loop: true
+});
