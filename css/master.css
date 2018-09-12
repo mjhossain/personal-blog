@@ -337,7 +337,7 @@
 
 .PortfolioSection {
   height: 100%;
-  width: 80vw;
+  width: 90vw;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -417,7 +417,7 @@
   font-size: 1.4em;
   background-color: var(--dark-blue);
   border-radius: 40px;
-  border: 3px solid var(--dark-blue);
+  border: 3px solid var(--light-red);
   color: var(--cream);
   font-family: var(--font2);
   box-shadow: var(--shadow);
@@ -426,6 +426,55 @@
 
 #contact_btn:hover {
   transform: scale(1.2);
+}
+
+#resume_btn {
+  margin-top: 4%;
+  margin-left: 5%;
+  padding: 12px;
+  font-size: 1.4em;
+  background-color: var(--light-red);
+  border-radius: 40px;
+  border: 3px solid var(--dark-blue);
+  color: var(--cream);
+  font-family: var(--font2);
+  box-shadow: var(--shadow);
+  transition: all .5s;
+}
+
+#resume_btn:hover {
+  transform: scale(1.2);
+}
+
+
+.ContactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-top: 50px;
+}
+
+.ContactForm > h2 {
+  font-family: var(--font2);
+  font-size: 2em;
+  margin-bottom: 5%;
+}
+
+.Form {
+  display: flex;
+  flex-flow: nowrap row;
+}
+
+.contactInfo {
+  margin-bottom: 20%;
+  margin-top: 10%;
+}
+
+.contactInfo > ul > li {
+  list-style: none;
+  font-size: 2.4em;
 }
 
 
