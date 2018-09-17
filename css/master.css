@@ -344,11 +344,15 @@
   align-items: center;
 }
 
+#portfolio_heading {
+  text-decoration: underline;
+}
+
 #PortfolioItem {
   width: 400px;
   height: 300px;
   border-radius: 2%;
-  background-color: var(--light-red);
+  background-color: var(--cream);
   box-shadow: var(--shadow);
   margin: 2%;
   transition: all .5s;
@@ -396,15 +400,15 @@
 }
 
 .resilienceand {
-  background: url('../media/resilienceand-sm.png');
+  background: url('../media/resilienceandweb.png');
 }
 
 .butterflyorg {
-  background: url('../media/butterflyorg-sm.png');
+  background: url('../media/butterflyweb.png');
 }
 
 .salmeen {
-  background: url('../media/salmeen-sm.png');
+  background: url('../media/salmeenweb.png');
 }
 
 .metro-life {
@@ -416,7 +420,7 @@
   padding: 12px;
   font-size: 1.4em;
   background-color: var(--dark-blue);
-  border-radius: 40px;
+  /* border-radius: 40px; */
   border: 3px solid var(--light-red);
   color: var(--cream);
   font-family: var(--font2);
@@ -434,7 +438,7 @@
   padding: 12px;
   font-size: 1.4em;
   background-color: var(--light-red);
-  border-radius: 40px;
+  /* border-radius: 40px; */
   border: 3px solid var(--dark-blue);
   color: var(--cream);
   font-family: var(--font2);
@@ -559,6 +563,10 @@
       -4px 8px 1px #7b7a7a,
       -5px 10px 1px #7f7d7d;
 
+}
+
+a {
+  text-decoration: none;
 }
 
 #emptySpace {
