@@ -23,6 +23,7 @@
   --font1: 'Quicksand', sans-serif;
   --font2: 'PT Sans', sans-serif;
   --shadow: 0 3px 8px 1px rgba(0,0,0,0.5);
+  --shadow2: 0 2px 3px 1px rgba(0,0,0,0.3);
 }
 
 
@@ -352,8 +353,8 @@
   width: 400px;
   height: 300px;
   border-radius: 2%;
-  background-color: var(--cream);
-  box-shadow: var(--shadow);
+  /* background-color: var(--cream); */
+  /* box-shadow: var(--shadow2); */
   margin: 2%;
   transition: all .5s;
   /* display: flex; */
