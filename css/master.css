@@ -20,8 +20,10 @@
   --mate-cream: #D9D7D6;
   --mate-white: #e7e5e4;
   --light-white: #F7F5F4;
+  --font: 'Lato' , sans-serif;
   --font1: 'Quicksand', sans-serif;
   --font2: 'PT Sans', sans-serif;
+  --font-paragraph: 'Montserrat', sans-serif;
   --shadow: 0 3px 8px 1px rgba(0,0,0,0.5);
   --shadow2: 0 2px 3px 1px rgba(0,0,0,0.3);
 }
@@ -225,6 +227,7 @@
   width: 70%;
   font-size: 1.3em;
   color: var(--title);
+  font-family: var(--font-paragraph);
 }
 
 .Portfolio {
@@ -552,6 +555,12 @@
 /* / Footer CSS */
 
 /* Shadows */
+
+
+
+#big_heading {
+  font-family: var(--font);
+}
 
 .elegantshadow {
     color: var(--dark-blue);
